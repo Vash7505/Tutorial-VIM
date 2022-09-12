@@ -1,0 +1,108 @@
+----------------------------------------------------------------------------
+               Tutorial basico de VIM
+                            Por: Juan Andrés Millán Calderón
+----------------------------------------------------------------------------
+
+Editor de texto
+----------------------------------------------------------------------------
+
+1. Instalar:
+
+En la terminal
+
+sudo apt-get install vim
+sudo apt-get install neovim
+
+VI es antiguo pero VIM es la version mejorada
+
+----------------------------------------------------------------------------
+
+2. Crear o abrir archivos
+
+vim (nombre del archivo)
+Si el archivo no existe lo creara
+
+----------------------------------------------------------------------------
+
+3. Modos en VIM
+
+Modo --Normal-- 	permite visualizar, moverte, borrar, grabar y salir
+			para ingresar en este modo presiona "ESC"
+			con : ingresamos comandos
+
+Modo --Insertar--   	permite editar el texto
+			para ingresar en este modo presiona "i"
+			otra forma de ingresar es con "a"
+			otra forma de ingresar es con la tecla "Insert"
+
+Modo --Visual--		permite seleccionar texto para copiar o pegar
+			para ingresar con "v"
+
+-----------------------------------------------------------------------------
+
+4. Movimiento del curso
+
+En el modo --Normal--
+
+h		:izquierda
+j		:abajo
+k		:arriba
+l 		:derecha
+
+w		:vas a la primera letra de la palabra
+		si vuelves presionar "w" vas avanzando en el sentido de lectura
+e		:avanzas a la ultima letra de una palabra
+b		:vas a ka primera letra de la palabra, en sentido contrario de
+		la lectura
+
+desde el modo --Insertar-- la primera ves usamos Alt + la direccion luego 
+pasaras al modo --Normal-- y solo muevete con h,j,k ó l
+
+Alt + h 	:izquierda
+Alt + j 	:abajo
+Alt + k 	:arriba
+Alt + l 	:derecha
+
+*ó tambien puede presionar "ESC"
+
+------------------------------------------------------------------------------
+
+5. Comandos para Modo --Normal--
+
+Cuando abre el archivo por defecto inicia en modo normal.
+Si se encuentra en modo --insertar-- puede llega al modo --Normal-- con ESC
+
+:q	   	:salir (pero no grabas)
+:q!  		:forzar la salida
+:w   		:guardar (sin salir)
+:wq  		:grabar y salir
+:x		:grabar y salir es lo mismo wq=x
+: set nu 	:numeros en lineas
+
+Para buscar palabras
+
+/ (palabra que busca)   : con esto encuentras una palabra
+para moverte en las busquedas de concidencias
+
+	n avanza
+	Shift + n retroceder
+
+------------------------------------------------------------------------------
+
+6. Editar en Modo --Normal--
+
+dd		:corta una linea
+p		:pega la linea abajo de donde estoy
+yy		:copia lineas
+o		:linea nueva
+d2d		:corta 2 lineas
+y3y		:copia 3 lineas
+u		:borra la linea
+Ctl + r		:adelante
+gg		:principio del archivo
+Alt + g		:final del archivo
+d + w		:corta una palabra
+
+hola mundo
+este texto es una prueba te ayuda para que puedas ir aprendiendo
+Un programador no tiene derecho de decirle a un diseñador que algo es imposible 
